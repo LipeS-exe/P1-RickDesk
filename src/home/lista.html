@@ -5,132 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../output.css">
     <script src="../js/lista.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>RickDesk - Listagem de Personagens</title>
-
 </head>
 <body class="bg-black m-0">
     <header>
-        <nav class=" flex justify-between  bg-linear-to-r from-black-700 from-30% to-[rgb(18,176,201)] to-60%">
+        <nav class=" flex justify-between bg-linear-to-r from-black-700 from-30% to-[rgb(18,176,201)] to-60%">
             <img class="w-56" src="../img/Rick_And_Morty_(4).png" alt="">
-            <h2 class="text-white  text-center text-7xl pr-5 font-semibold font[]"> RICKDESK </h2>     
+            <h2 class="text-white text-center text-7xl pr-5 font-semibold"> RICKDESK </h2>     
         </nav>
     </header>
     
     <main class="flex justify-center items-center">
-        <div class="w-500  bg-transparent mt-1 flex flex-wrap justify-between" id="cards">
+        <div class="w-500 bg-transparent mt-1 flex flex-wrap justify-between" id="cards">
             
-            <!-- 1 -->
+            <!-- Card 1 -->
             <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            <!-- 2 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
             </div>
             
-            <!-- 3 -->
+            <!-- Card 2 -->
             <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-             <!-- 4 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            <!-- 5 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            <!-- 6 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            <!-- 7 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            <!-- 8 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            
-            <!-- 9 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            
-            <!-- 10 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            
-            <!-- 11 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            
-            <!-- 12 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            
-            <!-- 13 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            
-            <!-- 14 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
-            
-            <!-- 15 -->
-            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
-                <h2 class="text-xl font-bold" id="name-personagems">Nome Personagens</h2>
-                <img src="" alt="" id="img-personagems" class="w-full h-58 object-cover">
-                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1">Ver Detalhes</button>
-            </div>
-            
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista ">Ver Detalhes</button>
 
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista ">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 7 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 8 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 9 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 10 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 11 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 12 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 13 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 14 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 15 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            <!-- Card 16 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            
+            <!-- Card 17 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
+            
+            
+            <!-- Card 18 -->
+            <div class="w-80 h-96 bg-[#1C1C1C] text-white shadow-[1px_7px_20px_1px_rgb(18,176,201)] rounded-xl m-5 p-6 flex flex-col items-center justify-between card">
+                <h2 class="nome-personagems text-xl font-bold">Nome Personagem</h2>
+                <img src="" alt="" class="img-personagems w-full h-58 object-cover">
+                <button class="w-full h-10 bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista">Ver Detalhes</button>
+            </div>
         </div>
     </main>
 </body>

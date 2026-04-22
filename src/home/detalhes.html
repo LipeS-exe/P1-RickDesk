@@ -6,43 +6,52 @@
     <link rel="stylesheet" href="../output.css">
     
     <title>RickDesk - Detalhes </title>
-
+    <script src="../js/detalhes.js" defer></script>
 <body class="m-0">
-    <main class="h-screen bg-radial from-[rgb(18,176,201)]  via-black to-black flex justify-center items-center">
-        <div class=" bg-[#121212] text-white flex items-center justify-center  flex-col  w-4xl h-120 rounded-md shadow-[1px_7px_20px_1px_rgb(18,176,201)]">
-            <div class="h-full flex items-start">
-            <img src="" alt="" class="h-full object-cover">
-            </div>
-            
-            <div class="flex-1 p-6 flex flex-col justify-center">
-                <div class="flex flex-row">
-                    <div class="flex flex-row items-center bg-white rounded-xl shadow-lg overflow-hidden w-full max-w-2xl">
-    
-    <!-- Lado Esquerdo: Imagem -->
-    <div class="flex justify-center items-center bg-gray-100">
-        <!-- Ajustei w-100 para w-48 pois w-100 não é padrão; object-cover mantém a proporção -->
-        <img class="w-48 h-48 object-cover" src="../imKO    g/Rick_And_Morty_(4).png" alt="Rick and Morty">
-    </div>
+    <main class="h-screen bg-radial from-[rgb(18,176,201)]  via-black to-black flex justify-center items-center"> 
+        <!-- DIV DETALHES -->
+        <div class="div-details flex w-[1000px] h-[400px] rounded-lg">
 
-    <!-- Lado Direito: Informações -->
-    <div class="p-6">
-        <ul class="space-y-4">
-            <li>
-                <span class="font-bold text-gray-500 text-sm uppercase">Last Known Location:</span>
-                <p class="text-lg text-gray-800">Earth (Replacement Dimension)</p>
-            </li>
-            <li>
-                <span class="font-bold text-gray-500 text-sm uppercase">First seen in:</span>
-                <p class="text-lg text-gray-800">Pilot</p>
-            </li>
-        </ul>
-    </div>
-    
-</div>
+            <!-- DIV ESQUERDA -->
+            <div class="flex-1 bg-white flex gap-4 rounded-l-lg">
+                <!-- Imagem do personagem -->
+                <img src="../img/301.jpeg" class="imagem-personagens h-full object-cover">
+            </div>
+<h3>teste</h3>
+            <!-- DIV DIREITA -->
+            <div class="w-64 p-4 bg-white rounded-r-lg">
+                <!-- Nome personagem -->
+                <h2 class="nome-personagens text-[40px] font-semibold"></h2>
+
+                <!-- Vida e Especie -->
+                <div class="flex items-center gap-2">
+                    <!-- Bolinha de status cor (verde/vermelho/cinza) -->
+                    <div class="ball-life w-[10px] h-[10px] bg-green-700 rounded-full"></div>
+
+                    <!-- status da vida do personagem (Alive/Dead/Unknown)-->
+                    <p class=" status-personagens font-semibold text-gray-500 text-[32px]"></p>
+
+                    <!-- Especie do personagem (Human/Alien/Animal) -->
+                    <p class="especies-personagens font-semibold text-gray-500 text-[32px]"> - </p>
                 </div>
 
+                <!-- Informações do personagem -->
+                <ul class="space-y-4">
+                    <!-- Última localização -->
+                    <li>
+                        <span class="font-bold text-gray-500 text-sm uppercase">Last Known Location:</span>
+                        <p class="ultima-localizacao text-lg text-gray-800"></p>
+                    </li>
+                    <!-- Visto pela primeira vez -->
+                    <li>
+                        <span class="font-bold text-gray-500 text-sm uppercase">First seen in:</span>
+                        <p class="visto-primeira text-lg text-gray-800"></p>
+                    </li>
+                </ul>
+
+                <!-- Botão voltar -->
+                <button class="botao-voltar w-[180px] h-[30px] bg-[#12B0C9] hover:bg-[#05879C] rounded-lg font-semibold text-white cursor-pointer transition-all duration-400 ease-in-out hover:-translate-y-1 btnLista mt-[10px]">Voltar</button>
             </div>
-            
         </div>
     </main>
 </body>
